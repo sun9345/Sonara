@@ -19,4 +19,8 @@ Desktop-приложение для Windows
 в одном приложении воспроизводить музыку и удобно организовывать свою коллекцию без избыточной сложности и ненужных функций
 
 ## Стек технологий
-C# / .Net; NAudio; WPF
+- [C#](https://learn.microsoft.com/dotnet/csharp/) / [.NET](https://dotnet.microsoft.com/): язык и платформа
+- [.NET MAUI](https://learn.microsoft.com/dotnet/maui/): пользовательский интерфейс
+- [NAudio](https://github.com/naudio/NAudio): аудиодвижок
+- [ATL.NET](https://github.com/Zeugma440/atldotnet): чтение и запись тегов аудиофайлов
+- [SQLite](https://www.sqlite.org/): хранение индекса музыкальной библиотеки
