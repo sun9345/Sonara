@@ -19,6 +19,10 @@ namespace Sonara.App
     		builder.Logging.AddDebug();
 #endif
 
+            builder.Services.AddSonaraServices();                 // сервисы (заглушки)
+            builder.Services.AddTransient<LibraryViewModel>();    // ViewModel
+            builder.Services.AddTransient<LibraryPage>();         // страница
+            
             return builder.Build();
         }
     }
