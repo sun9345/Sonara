@@ -107,6 +107,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Fakes\Fakes.csproj" />
 	  <ProjectReference Include="..\Sonara.Audio\Sonara.Audio.csproj" />
 	  <ProjectReference Include="..\Sonara.Core\Sonara.Core.csproj" />
 	  <ProjectReference Include="..\Sonara.Library\Sonara.Library.csproj" />

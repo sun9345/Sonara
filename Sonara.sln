@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.Core", "Sonara.Core\Sonara.Core.csproj", "{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.Library", "Sonara.Library\Sonara.Library.csproj", "{1B14480D-67C3-4F03-9821-4C74E51D453B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.App", "Sonara.App\Sonara.App.csproj", "{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fakes", "Fakes\Fakes.csproj", "{4FF88EC1-0CB4-4A51-A29D-2EE719C0AFA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF88EC1-0CB4-4A51-A29D-2EE719C0AFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF88EC1-0CB4-4A51-A29D-2EE719C0AFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF88EC1-0CB4-4A51-A29D-2EE719C0AFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF88EC1-0CB4-4A51-A29D-2EE719C0AFA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
