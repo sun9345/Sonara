@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sonara.Audio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e510c5a2d2ee87d53b713449732593e9300ddd38")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sonara.Audio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sonara.Audio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

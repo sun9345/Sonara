@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sonara.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e510c5a2d2ee87d53b713449732593e9300ddd38")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sonara.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sonara.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

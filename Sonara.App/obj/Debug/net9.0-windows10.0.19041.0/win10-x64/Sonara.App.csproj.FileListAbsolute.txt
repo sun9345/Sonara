@@ -511,6 +511,7 @@ C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win1
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.AssemblyInfoInputs.cache
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.AssemblyInfo.cs
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.csproj.CoreCompileInputs.cache
+C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.sourcelink.json
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.csproj.Up2Date
 C:\Users\sun\Desktop\Sonara\Sonara.App\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Sonara.App.dll
