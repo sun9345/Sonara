@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sun\\Desktop\\Sonara\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}|Sonara.App\\Sonara.App.csproj|c:\\users\\sun\\desktop\\sonara\\sonara.app\\sonara.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}|Sonara.App\\Sonara.App.csproj|solutionrelative:sonara.app\\sonara.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE283152-91F7-4669-B64E-0609C3931825}|Sonara.Audio\\Sonara.Audio.csproj|c:\\users\\sun\\desktop\\sonara\\sonara.audio\\sonara.audio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DE283152-91F7-4669-B64E-0609C3931825}|Sonara.Audio\\Sonara.Audio.csproj|solutionrelative:sonara.audio\\sonara.audio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}|Sonara.Core\\Sonara.Core.csproj|c:\\users\\sun\\desktop\\sonara\\sonara.core\\sonara.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}|Sonara.Core\\Sonara.Core.csproj|solutionrelative:sonara.core\\sonara.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B14480D-67C3-4F03-9821-4C74E51D453B}|Sonara.Library\\Sonara.Library.csproj|c:\\users\\sun\\desktop\\sonara\\sonara.library\\sonara.library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1B14480D-67C3-4F03-9821-4C74E51D453B}|Sonara.Library\\Sonara.Library.csproj|solutionrelative:sonara.library\\sonara.library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,58 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Sonara.Library",
-              "DocumentMoniker": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Library\\Sonara.Library.csproj",
-              "RelativeDocumentMoniker": "Sonara.Library\\Sonara.Library.csproj",
-              "ToolTip": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Library\\Sonara.Library.csproj",
-              "RelativeToolTip": "Sonara.Library\\Sonara.Library.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-04T13:33:18.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Sonara.Core",
-              "DocumentMoniker": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Core\\Sonara.Core.csproj",
-              "RelativeDocumentMoniker": "Sonara.Core\\Sonara.Core.csproj",
-              "ToolTip": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Core\\Sonara.Core.csproj",
-              "RelativeToolTip": "Sonara.Core\\Sonara.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-04T13:33:17.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Sonara.App",
-              "DocumentMoniker": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.App\\Sonara.App.csproj",
-              "RelativeDocumentMoniker": "Sonara.App\\Sonara.App.csproj",
-              "ToolTip": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.App\\Sonara.App.csproj",
-              "RelativeToolTip": "Sonara.App\\Sonara.App.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-04T13:33:16.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sonara.Audio",
-              "DocumentMoniker": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Audio\\Sonara.Audio.csproj",
-              "RelativeDocumentMoniker": "Sonara.Audio\\Sonara.Audio.csproj",
-              "ToolTip": "C:\\Users\\sun\\Desktop\\Sonara\\Sonara.Audio\\Sonara.Audio.csproj",
-              "RelativeToolTip": "Sonara.Audio\\Sonara.Audio.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-04T13:33:14.895Z",
-              "EditorCaption": ""
             }
           ]
         },

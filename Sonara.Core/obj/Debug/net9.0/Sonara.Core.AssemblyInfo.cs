@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sonara.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e510c5a2d2ee87d53b713449732593e9300ddd38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a247186197d7446ae2240019ca8b078b50ae594b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sonara.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sonara.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
