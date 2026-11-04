@@ -107,9 +107,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Fakes\Fakes.csproj" />
 	  <ProjectReference Include="..\Sonara.Audio\Sonara.Audio.csproj" />
 	  <ProjectReference Include="..\Sonara.Core\Sonara.Core.csproj" />
 	  <ProjectReference Include="..\Sonara.Library\Sonara.Library.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\LibraryPage.xaml.cs">
+	    <DependentUpon>LibraryPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\LibraryPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
