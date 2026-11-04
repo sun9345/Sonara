@@ -1,0 +1,11 @@
+C:\Users\sun\Desktop\Sonara\Sonara.Core\bin\Debug\net9.0\Sonara.Core.deps.json
+C:\Users\sun\Desktop\Sonara\Sonara.Core\bin\Debug\net9.0\Sonara.Core.dll
+C:\Users\sun\Desktop\Sonara\Sonara.Core\bin\Debug\net9.0\Sonara.Core.pdb
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.AssemblyInfoInputs.cache
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.AssemblyInfo.cs
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.csproj.CoreCompileInputs.cache
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.dll
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\refint\Sonara.Core.dll
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\Sonara.Core.pdb
+C:\Users\sun\Desktop\Sonara\Sonara.Core\obj\Debug\net9.0\ref\Sonara.Core.dll

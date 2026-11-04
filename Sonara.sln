@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.Core", "Sonara.Core\Sonara.Core.csproj", "{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.Audio", "Sonara.Audio\Sonara.Audio.csproj", "{DE283152-91F7-4669-B64E-0609C3931825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.Library", "Sonara.Library\Sonara.Library.csproj", "{1B14480D-67C3-4F03-9821-4C74E51D453B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sonara.App", "Sonara.App\Sonara.App.csproj", "{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6C81DB-CCFD-4C06-89AD-2DE6A89CA4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE283152-91F7-4669-B64E-0609C3931825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE283152-91F7-4669-B64E-0609C3931825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE283152-91F7-4669-B64E-0609C3931825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE283152-91F7-4669-B64E-0609C3931825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B14480D-67C3-4F03-9821-4C74E51D453B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B14480D-67C3-4F03-9821-4C74E51D453B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B14480D-67C3-4F03-9821-4C74E51D453B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B14480D-67C3-4F03-9821-4C74E51D453B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C4CC09-CEBD-4FB7-B48F-9716C0BC3A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4BD381E-AE4C-4403-9F4B-7557A65C2CB2}
+	EndGlobalSection
+EndGlobal
