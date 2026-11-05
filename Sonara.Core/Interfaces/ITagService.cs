@@ -10,5 +10,14 @@ namespace Sonara.Core
     {
         Task<TrackInfo> ReadAsync(string path, CancellationToken ct = default);
         Task WriteAsync(string path, TrackInfo tags, CancellationToken ct = default);
+        /// <summary>
+        /// считывает обложку трека как массив байтов 
+        /// </summary>
+        Task<byte[]?> ReadCoverAsync(string path, CancellationToken ct = default);
+
+        /// <summary>
+        /// записывает в трек обложку
+        /// </summary>
+        Task WriteCoverAsync(string path, byte[] image, string mimeType, CancellationToken ct = default);
     }
 }
