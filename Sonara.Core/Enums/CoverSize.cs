@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sonara.Core.Enums
+namespace Sonara.Core
 {
     public enum CoverSize
     {
