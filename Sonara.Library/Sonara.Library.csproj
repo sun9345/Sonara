@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.14" />
+    <PackageReference Include="SkiaSharp" Version="4.154.0" />
     <PackageReference Include="z440.atl.core" Version="7.19.0" />
   </ItemGroup>
 
