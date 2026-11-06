@@ -1,5 +1,6 @@
 ﻿using Fakes;
 using Sonara.Core;
+using Sonara.Library;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Sonara.App
             s.AddSingleton<ILibraryRepository, InMemoryLibraryRepository>();  // позже: SqliteLibraryRepository (щас заглушки тут)
             s.AddSingleton<ITagService, FakeTagService>();                    // позже: AtlTagService
             s.AddSingleton<IAudioPlayer, FakeAudioPlayer>();                  // позже: NAudioPlayer
+            s.AddSingleton<ICoverService>(sp => new CoverService(sp.GetRequiredService<ITagService>()));
             return s;
         }
     }
