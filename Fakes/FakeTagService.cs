@@ -13,31 +13,21 @@ namespace Fakes
         {
             await Task.Delay(50, ct);
             return new TrackInfo(
-                path,
+                path, 
                 Path.GetFileNameWithoutExtension(path),
-                "Unknown Artist",
-                "Unknown Album",
-                null,
-                "",
+                "Unknown Artist", 
+                "Unknown Album", 
+                null, 
+                "", 
                 null,
                 "jazz",
-                TimeSpan.FromMinutes(3),
+                TimeSpan.FromMinutes(3), 
                 Path.GetExtension(path).TrimStart('.'));
         }
 
         public async Task WriteAsync(string path, TrackInfo tags, CancellationToken ct = default)
         {
             await Task.Delay(100, ct);   // ничего не пишет
-        }
-
-        public Task<byte[]?> ReadCoverAsync(string path, CancellationToken ct = default)
-        {
-            return Task.FromResult<byte[]?>(null);
-        }
-
-        public Task WriteCoverAsync(string path, byte[] image, string mimeType, CancellationToken ct = default)
-        {
-            return Task.CompletedTask;
         }
     }
 }
