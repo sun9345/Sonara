@@ -7,12 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 
-
-
 namespace Sonara.Library
 {
-    public class CoverService
+    public class CoverService : ICoverService
     {
+        // для перебора имен для поиска обложки трека в папке с треком
         private static readonly string[] FolderCoverNames = { "cover", "folder", "front", "album" };
         private static readonly string[] FolderCoverExtensions = { ".jpg", ".jpeg", ".png" };
 
