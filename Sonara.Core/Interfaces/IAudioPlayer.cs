@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sonara.Core
 {
-    public interface IAudioPlayer
+    public interface IAudioPlayer : IDisposable
     {
         PlayerState State { get; }
         TimeSpan Position { get; }
