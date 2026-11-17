@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Sonara.App.ViewModels;
 
 namespace Sonara.App
 {
@@ -21,6 +22,7 @@ namespace Sonara.App
 
             builder.Services.AddSonaraServices();                 // сервисы (заглушки)
             builder.Services.AddTransient<LibraryViewModel>();    // ViewModel
+            builder.Services.AddSingleton<PlayerViewModel>();
             builder.Services.AddTransient<LibraryPage>();         // страница
             builder.Services.AddTransient<SettingsViewModel>();
             builder.Services.AddTransient<SettingsPage>();

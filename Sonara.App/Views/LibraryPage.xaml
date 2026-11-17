@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:Sonara.App.Views"
              x:Class="Sonara.App.LibraryPage"
              Title="Библиотека">
 
-    <Grid RowDefinitions="Auto,*" Padding="12" RowSpacing="8">
+    <Grid RowDefinitions="Auto,*,Auto"
+          Padding="12"
+          RowSpacing="8">
+
         <SearchBar Grid.Row="0"
                    Placeholder="Поиск"
                    Text="{Binding SearchText}"
                    SearchCommand="{Binding SearchCommand}" />
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Tracks}">
+        <CollectionView Grid.Row="1"
+                        ItemsSource="{Binding Tracks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <VerticalStackLayout Padding="0,6">
-                        <Label Text="{Binding Title}" FontSize="16" />
-                        <Label Text="{Binding Artist}" FontSize="12" TextColor="Gray" />
+                        <Label Text="{Binding Title}"
+                               FontSize="16" />
+                        <Label Text="{Binding Artist}"
+                               FontSize="12"
+                               TextColor="Gray" />
                     </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <views:PlayerPanel x:Name="PlayerPanel"
+                           Grid.Row="2" />
+
     </Grid>
 </ContentPage>
