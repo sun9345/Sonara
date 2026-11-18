@@ -55,7 +55,11 @@ namespace Sonara.Audio
 
         public void Pause()
         {
-            throw new NotImplementedException();
+            if (_outputDevice == null || _state != PlayerState.Played)
+                return;
+            _outputDevice.Pause();
+            _state = PlayerState.Paused;
+            StateChanged?.Invoke(this, EventArgs.Empty);
         }
 
         public Task PlayAsync(string path)
