@@ -4,23 +4,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sonara.Core;
+using NAudio.Wave;
 
 namespace Sonara.Audio
 {
     public class NAudioPlayer : IAudioPlayer
     {
-        public PlayerState State => throw new NotImplementedException();
+        private AudioFileReader? _audioFile;
+        private WaveOutEvent? _outputDevice;
+        private PlayerState _state = PlayerState.Stopped;
+        private float _volume = 1.0f;
+        private bool _stopRequested;
+        private bool _disposed;
 
-        public TimeSpan Position => throw new NotImplementedException();
+        public PlayerState State => _state;
 
-        public float Volume { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public TimeSpan Position => _audioFile?.CurrentTime ?? TimeSpan.Zero;
+
+        public float Volume 
+        { 
+            get => _volume;
+            set 
+            { 
+                _volume = Math.Clamp(value, 0.0f, 1.0f);
+                if (_audioFile != null)
+                {
+                    _audioFile.Volume = _volume;
+                }
+            } 
+        }
 
         public event EventHandler? StateChanged;
         public event EventHandler? TrackEnded;
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            if (_disposed)
+                return;
+
+            _stopRequested = true;
+            _outputDevice?.Stop();
+            _outputDevice?.Dispose();
+            _outputDevice = null;
+
+            _disposed = true;
+            _audioFile?.Dispose();
+            _audioFile = null;
+            _state = PlayerState.Stopped;
         }
 
         public void Pause()
