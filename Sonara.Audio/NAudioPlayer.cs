@@ -69,7 +69,12 @@ namespace Sonara.Audio
 
         public void Resume()
         {
-            throw new NotImplementedException();
+            if(_outputDevice == null || _state != PlayerState.Paused)
+                return;
+
+            _outputDevice.Play();
+            _state = PlayerState.Played;
+            StateChanged?.Invoke(this, EventArgs.Empty);
         }
 
         public void Seek(TimeSpan position)
