@@ -11,7 +11,7 @@ namespace Sonara.Audio
     public class NAudioPlayer : IAudioPlayer
     {
         private AudioFileReader? _audioFile;
-        private WaveOutEvent? _outputDevice;
+        private WaveOut? _outputDevice;
         private PlayerState _state = PlayerState.Stopped;
         private float _volume = 1.0f;
         private bool _stopRequested;
@@ -55,6 +55,9 @@ namespace Sonara.Audio
 
         public void Pause()
         {
+            if (_disposed)
+                throw new ObjectDisposedException(nameof(NAudioPlayer));
+
             if (_outputDevice == null || _state != PlayerState.Played)
                 return;
             _outputDevice.Pause();
@@ -62,14 +65,93 @@ namespace Sonara.Audio
             StateChanged?.Invoke(this, EventArgs.Empty);
         }
 
+        private void OnPlaybackStopped(object? sender, StoppedEventArgs e)
+        {
+            if (sender != _outputDevice)
+                return;
+            if (_disposed)
+                return;
+
+            _state = PlayerState.Stopped;
+            StateChanged?.Invoke(this, EventArgs.Empty);
+
+            if(_stopRequested)
+            {
+                _stopRequested = false;
+                return;
+            }
+
+            if (e.Exception == null)
+                TrackEnded?.Invoke(this, EventArgs.Empty);
+        }
+
         public Task PlayAsync(string path)
         {
-            throw new NotImplementedException();
+            if (_disposed)
+                throw new ObjectDisposedException(nameof(NAudioPlayer));
+
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentNullException("Путь к аудиофайлу не может быть пустым.",nameof(path));
+
+            AudioFileReader? newAudioFile = null;
+            WaveOut? newOutputDevice = null;
+
+            try
+            {
+                newAudioFile = new AudioFileReader(path);
+                newAudioFile.Volume = _volume;
+                newOutputDevice = new WaveOut();
+                newOutputDevice.Init(newAudioFile);
+            }
+            catch
+            {
+                newOutputDevice?.Dispose();
+                newAudioFile?.Dispose();
+                throw;
+            }
+
+            if (_outputDevice != null)
+            {
+                _outputDevice.PlaybackStopped -= OnPlaybackStopped;
+                _outputDevice.Stop();
+                _outputDevice.Dispose();
+                _outputDevice = null;
+            }
+            _audioFile?.Dispose();
+            _audioFile = null;
+            _audioFile = newAudioFile;
+            _outputDevice = newOutputDevice;
+            _stopRequested = false;
+            newOutputDevice.PlaybackStopped += OnPlaybackStopped;
+
+            try
+            {
+                newOutputDevice.Play();
+            }
+            catch 
+            {
+                newOutputDevice.PlaybackStopped -= OnPlaybackStopped;
+                newOutputDevice.Dispose();
+                newAudioFile.Dispose();
+
+                _outputDevice = null;
+                _audioFile = null;
+                _state = PlayerState.Stopped;
+                StateChanged?.Invoke(this, EventArgs.Empty);
+                throw;
+            }
+
+            _state = PlayerState.Played;
+            StateChanged?.Invoke(this, EventArgs.Empty);
+            return Task.CompletedTask;
         }
 
         public void Resume()
         {
-            if(_outputDevice == null || _state != PlayerState.Paused)
+            if (_disposed)
+                throw new ObjectDisposedException(nameof(NAudioPlayer));
+
+            if (_outputDevice == null || _state != PlayerState.Paused)
                 return;
 
             _outputDevice.Play();
@@ -79,6 +161,9 @@ namespace Sonara.Audio
 
         public void Seek(TimeSpan position)
         {
+            if (_disposed)
+                throw new ObjectDisposedException(nameof(NAudioPlayer));
+
             if (_audioFile == null)
                 return;
 
