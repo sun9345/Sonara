@@ -79,7 +79,15 @@ namespace Sonara.Audio
 
         public void Seek(TimeSpan position)
         {
-            throw new NotImplementedException();
+            if (_audioFile == null)
+                return;
+
+            if (position < TimeSpan.Zero)
+                position = TimeSpan.Zero;
+
+            if (position > _audioFile.TotalTime)
+                position = _audioFile.TotalTime;
+            _audioFile.CurrentTime = position;
         }
 
         public void Stop()
