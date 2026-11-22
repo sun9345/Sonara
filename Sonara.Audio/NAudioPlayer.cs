@@ -43,9 +43,14 @@ namespace Sonara.Audio
                 return;
 
             _stopRequested = true;
-            _outputDevice?.Stop();
-            _outputDevice?.Dispose();
-            _outputDevice = null;
+
+            if (_outputDevice != null)
+            {
+                _outputDevice.PlaybackStopped -= OnPlaybackStopped;
+                _outputDevice?.Stop();
+                _outputDevice?.Dispose();
+                _outputDevice = null;
+            }
 
             _disposed = true;
             _audioFile?.Dispose();
@@ -177,7 +182,19 @@ namespace Sonara.Audio
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            if (_disposed)
+                throw new ObjectDisposedException(nameof(NAudioPlayer));
+
+            if (_outputDevice == null)
+                return;
+
+            _stopRequested = true;
+            _outputDevice.Stop();
+
+            if (_audioFile != null)
+                _audioFile.CurrentTime = TimeSpan.Zero;
+            _state = PlayerState.Stopped;
+            StateChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }
